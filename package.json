@@ -1,10 +1,10 @@
 {
-  "name": "random-place-name",
+  "name": "nom-de-guerre",
   "version": "0.0.0",
   "description": "returns a random name of a place in Québec",
   "main": "index.js",
   "scripts": {
-    "test": "tap test"
+    "test": "echo 'no tests yet'"
   },
   "keywords": [
     "name",
