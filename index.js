@@ -16,5 +16,3 @@ function randomName() {
     names.used[ random ] = 1;
     return random;
 }
-
-console.log(randomName());
