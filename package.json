@@ -14,5 +14,13 @@
     "canada"
   ],
   "author": "Alexander Vados <alex.vados@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexander-daniel/nom-de-guerre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexander-daniel/nom-de-guerre/issues"
+  },
+  "homepage": "https://github.com/alexander-daniel/nom-de-guerre"
 }

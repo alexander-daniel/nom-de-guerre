@@ -17,7 +17,7 @@ returns a random name - `string`.
 
 # Installation
 ```bash
-npm install random-place-name
+npm install nom-de-guerre
 ```
 
 # License
