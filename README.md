@@ -2,7 +2,7 @@
 a simple random naming module. more fun than numbered ID's sometimes.
 could be extended to use different lists of names...
 
-defaults to returning a `string` of a random place in Québec.
+defaults to returning a `string` of a random place in Canada.
 
 # Usage
 ```javascript
