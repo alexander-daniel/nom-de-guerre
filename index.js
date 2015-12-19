@@ -43,7 +43,7 @@ nomDeGuerre.census = function (countryName) {
     var citiesList = NAMES[countryName];
 
     if (!citiesList.length) {
-        throw new Error(`${countryName} does not have a cities list yet...`);
+        throw new Error(countryName + 'does not have a cities list yet...');
     }
 
     var censusList = citiesList.slice();
