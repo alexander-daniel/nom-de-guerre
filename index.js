@@ -1,23 +1,23 @@
 'use strict';
 
-const DEFAULT_NAMES = require('./data/quebec.json').names;
-const NAMES = require('./data/complete.json');
+// var DEFAULT_NAMES = require('./data/quebec.json').names;
+var NAMES = require('./data/complete.json');
 
 /*
  * Regular random name generator, will just spit out a random place
  * in quebec, but not check if unique.
  */
-const nomDeGuerre = module.exports = function (countryName) {
+var nomDeGuerre = module.exports = function (countryName) {
     if (!countryName) countryName = 'Canada';
 
-    let citiesList = NAMES[countryName];
+    var citiesList = NAMES[countryName];
 
     if (!citiesList.length) {
-        throw new Error(`${countryName} does not have a cities list yet...`);
+        throw new Error(countryName + ' does not have a cities list yet...');
     }
 
-    const index = Math.floor( Math.random() * DEFAULT_NAMES.length);
-    const random = DEFAULT_NAMES[index];
+    var index = Math.floor( Math.random() * citiesList.length);
+    var random = citiesList[index];
 
     return random;
 };
@@ -40,13 +40,13 @@ nomDeGuerre.getCountry = function (countryName) {
 nomDeGuerre.census = function (countryName) {
     if (!countryName) countryName = 'Canada';
 
-    let citiesList = NAMES[countryName];
+    var citiesList = NAMES[countryName];
 
     if (!citiesList.length) {
         throw new Error(`${countryName} does not have a cities list yet...`);
     }
 
-    let censusList = citiesList.slice();
+    var censusList = citiesList.slice();
 
     /*
      * This is what we return, and it has the list in its closure scope, so we
@@ -58,8 +58,8 @@ nomDeGuerre.census = function (countryName) {
             throw new Error('No more unique names to choose from!');
         }
 
-        const index = Math.floor( Math.random() * censusList.length);
-        const random = censusList[index];
+        var index = Math.floor( Math.random() * censusList.length);
+        var random = censusList[index];
 
         censusList.splice(index, 1);
 
