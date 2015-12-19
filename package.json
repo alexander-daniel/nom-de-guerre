@@ -1,6 +1,6 @@
 {
   "name": "nom-de-guerre",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "returns a random name of a place in Québec",
   "main": "index.js",
   "scripts": {
