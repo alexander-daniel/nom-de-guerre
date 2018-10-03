@@ -1,42 +1,34 @@
 # nom-de-guerre
 a simple random naming module. more fun than numbered ID's sometimes.
-could be extended to use different lists of names...
-
-defaults to returning a `string` of a random place in Canada.
 
 # Usage
 ```javascript
 var nomDeGuerre = require('nom-de-guerre');
 
-nomDeGuerre() // -> will output random place in Canada
+nomDeGuerre() // -> will output random place in Québec
 ```
 
 # Methods
-## nomDeGuerre(countryName)
-returns a random city name from `countryName` - `string`.
-`countryName` defaults to `Canada`.
+## nomDeGuerre()
+returns a random city name from Québec
 
-## nomDeGuerre.getCountries()
-returns a list of countries with city data.
-
-## nomDeGuerre.getCountry(countryName)
-returns a list of cities from `countryName` if it exists.
-
-## nomDeGuerre.census(countryName)
-returns a `census` function that will output unique names from the `countryName`. It will only output the city name once, until all cities are exhausted.
+## nomDeGuerre.createCensus()
+returns a `census` function that will output unique names. It will only output the city name once, until all cities are exhausted.
 
 Example:
 ```javascript
 const nomDeGuerre = require('nom-de-guerre');
-const census = nomDeGuerre.census('Cuba');
+const census = nomDeGuerre.createCensus();
 
-census(); // -> 'Veradero'
-census(); // -> 'Havana'
+census(); // -> 'Montreal'
+census(); // -> 'Pointe-Claire'
 ```
 
 # Installation
 ```bash
 npm install nom-de-guerre
+// or
+yarn add nom-de-guerre
 ```
 
 # License

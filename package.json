@@ -1,10 +1,10 @@
 {
   "name": "nom-de-guerre",
-  "version": "1.0.2",
+  "version": "2.0.2",
   "description": "returns a random name of a place in Québec",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'no tests yet'"
+    "test": "tap test.js"
   },
   "keywords": [
     "name",
@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/alexander-daniel/nom-de-guerre/issues"
   },
-  "homepage": "https://github.com/alexander-daniel/nom-de-guerre"
+  "homepage": "https://github.com/alexander-daniel/nom-de-guerre",
+  "devDependencies": {
+    "tap": "^12.0.1",
+    "tape": "^4.9.1"
+  }
 }
